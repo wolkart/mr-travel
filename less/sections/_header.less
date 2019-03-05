@@ -1,0 +1,42 @@
+.header {
+	background-color: #F76F8D;
+	background-image: url("../img/bg/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 790px;
+	box-shadow: 8px 13px 15px rgba(189, 10, 170, 0.15);
+	position: relative;
+	z-index: 0;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(240, 74, 111, 0.5);
+		z-index: -1;
+	}
+}
+
+.header-heading {
+	width: 750px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header-heading__title {
+	margin: 0;
+	margin-bottom: 40px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3.4px;
+	text-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
+}

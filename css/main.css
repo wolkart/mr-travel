@@ -1,0 +1,720 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+html {
+  font-size: 10px;
+  line-height: 1.4;
+}
+body {
+  font-size: 1.6rem;
+  /* 10px * 1.6 = 16px */
+  font-family: 'Proxima Nova Rg';
+}
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+.container {
+  width: 1045px;
+  margin: 0 auto;
+}
+.container--flex-jcsb {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 70px;
+  margin-bottom: 180px;
+}
+.logo {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.navigation-list__block {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navigation-list__item {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 12px;
+}
+.navigation-list__item:last-child {
+  margin-right: 0;
+}
+.navigation-list__link {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFF;
+  opacity: 0.3;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.navigation-list__link:hover,
+.navigation-list__link:active,
+.navigation-list__link:focus {
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+}
+.search-bar {
+  position: relative;
+  display: inline-block;
+  width: 445px;
+}
+.search-bar__input {
+  display: block;
+  width: 400px;
+  height: 50px;
+  padding-left: 60px;
+  background-color: #FFF;
+  border: 1px solid #fff;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
+  background-image: url("../img/icons/search.png");
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.search-bar__input:hover,
+.search-bar__input:active,
+.search-bar__input:focus {
+  border: 1px solid #f76f8d;
+}
+.search-bar__submit {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  background-color: #f76f8d;
+  padding: 20px 40px;
+  border: none;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.search-bar__submit:hover,
+.search-bar__submit:active,
+.search-bar__submit:focus {
+  background-color: #F73C65;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+}
+.form-booking-heading {
+  margin-bottom: 45px;
+  font-family: 'Proxima Nova Lt';
+  color: #626161;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  text-align: center;
+}
+.form-booking {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.form-booking__input {
+  width: 144px;
+  padding: 15px 10px 15px 20px;
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-color: #FFF;
+  border: 3px solid #fff;
+  outline: none;
+  box-shadow: 0 0 20px rgba(247, 111, 141, 0.15);
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.form-booking__input:hover,
+.form-booking__input:active,
+.form-booking__input:focus {
+  border: 3px solid #FECAD6;
+}
+.form-booking__input--icon-location {
+  background-image: url("../img/icons/location-icon.png");
+}
+.form-booking__input--icon-date {
+  background-image: url("../img/icons/date-icon.png");
+}
+.form-booking__input--icon-guests {
+  background-image: url("../img/icons/guests-icon.png");
+}
+.form-booking__input--large-width {
+  width: 267px;
+}
+.form-booking__submit {
+  padding: 15px 25px;
+  outline: none;
+  border: none;
+  background-color: #f76f8d;
+  box-shadow: 0 0 20px rgba(247, 111, 141, 0.15);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.form-booking__submit:hover,
+.form-booking__submit:active,
+.form-booking__submit:focus {
+  background-color: #F73C65;
+  box-shadow: 0px 0px 20px 5px rgba(247, 111, 141, 0.3);
+}
+.destination-list {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.destination-item {
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: 8px 13px 15px rgba(189, 10, 170, 0.15);
+}
+.destination-item:hover .destination-item-hover {
+  display: block;
+  top: 0;
+}
+.destination-item__img {
+  display: block;
+  width: 330px;
+}
+.destination-item__img--big {
+  width: 687px;
+}
+.destination-item-hover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(240, 74, 111, 0.7);
+  padding-top: 110px;
+  text-align: center;
+  color: #FFF;
+  -webkit-transition: top 0.5s ease-out;
+  -moz-transition: top 0.5s ease-out;
+  -ms-transition: top 0.5s ease-out;
+  -o-transition: top 0.5s ease-out;
+  transition: top 0.5s ease-out;
+}
+.destination-item-hover__icon {
+  margin-bottom: 10px;
+}
+.destination-item-hover__title {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+.destination-item-hover__title span {
+  font-family: 'Proxima Nova Lt';
+  font-weight: 300;
+}
+.button {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 40%);
+  -moz-transform: translate(-50%, 40%);
+  -ms-transform: translate(-50%, 40%);
+  -o-transform: translate(-50%, 40%);
+  transform: translate(-50%, 40%);
+  background-color: #f76f8d;
+  padding: 17px 35px 16px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  z-index: 5;
+  font-size: 14px;
+  color: #FFF;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 8px 13px 15px rgba(189, 10, 170, 0.15);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: #F73C65;
+  box-shadow: 8px 13px 15px rgba(189, 10, 170, 0.2);
+}
+.filer-block {
+  margin-bottom: 67px;
+  font-family: 'Proxima Nova Lt';
+  font-size: 14px;
+  color: #cccccc;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.filter-block__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.filter-block__item {
+  margin: 0;
+  padding: 8px 50px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.filter-block__item--active {
+  color: #F76F8D;
+  box-shadow: 0px 0px 20px 0px rgba(247, 111, 141, 0.15);
+}
+.filter-block__item:hover,
+.filter-block__item:active,
+.filter-block__item:focus {
+  color: #F76F8D;
+  box-shadow: 0px 0px 20px 0px rgba(247, 111, 141, 0.15);
+}
+.hotel-list {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.hotel-item {
+  display: flex;
+  height: 187px;
+  margin-right: 80px;
+  margin-bottom: 26px;
+}
+.hotel-item__img {
+  background-color: #fdf8f9;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 187px;
+  width: 201px;
+  margin-right: 22px;
+  box-shadow: 8px 13px 15px rgba(247, 111, 141, 0.1);
+}
+.hotel-item-desc {
+  width: 210px;
+  padding-top: 17px;
+  padding-bottom: 35px;
+}
+.hotel-item-desc__name {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 0.8px;
+}
+.hotel-item-desc__rooms {
+  margin-bottom: 35px;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 0.8px;
+}
+.hotel-item-desc__price {
+  font-size: 16px;
+  color: #f76f8d;
+  letter-spacing: 0.8px;
+  line-height: 30px;
+  font-style: italic;
+}
+.info-card-wrapper {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+.info-card {
+  width: 329px;
+  background-color: #FFF;
+  padding: 20px 30px 25px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(247, 111, 141, 0.1);
+}
+.info-card__title {
+  margin-bottom: 32px;
+  font-size: 24px;
+  color: #F76F8D;
+  letter-spacing: 1.2px;
+}
+.info-card__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.info-card__list--last {
+  margin-top: 45px;
+}
+.info-card__item {
+  margin: 0;
+  padding: 0;
+}
+.info-card__link {
+  font-family: 'Proxima Nova Lt';
+  color: #666;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  line-height: 30px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.info-card__link:hover,
+.info-card__link:active,
+.info-card__link:focus {
+  color: #F76F8D;
+}
+.info-card__link--last {
+  color: #F76F8D;
+  line-height: 22px;
+}
+.info-card__link--last:hover,
+.info-card__link--last:active,
+.info-card__link--last:focus {
+  color: #B30D31;
+}
+.info-card__text {
+  margin: 0;
+  font-family: 'Proxima Nova Lt';
+  color: #666;
+  letter-spacing: 0.7px;
+  line-height: 22px;
+}
+.info-card-mail {
+  margin-top: 28px;
+}
+.info-card-mail__input {
+  width: 100%;
+  padding: 18px;
+  background-color: #F9EEF1;
+  background-image: url("../img/icons/path.png");
+  background-repeat: no-repeat;
+  background-position: center right 18px;
+  border: none;
+  outline: none;
+  font-family: 'Proxima Nova Lt';
+  color: #666;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.info-card-mail__input:hover,
+.info-card-mail__input:active,
+.info-card-mail__input:focus {
+  background-color: #FBD9E2;
+}
+.footer-nav__title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #F76F8D;
+  letter-spacing: 0.9px;
+}
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-nav__item {
+  margin: 0;
+  padding: 0;
+}
+.footer-nav__link {
+  font-family: 'Proxima Nova Lt';
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.footer-nav__link:hover,
+.footer-nav__link:active,
+.footer-nav__link:focus {
+  color: #F76F8D;
+}
+.copyright {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 23px 0px 20px;
+}
+.copyright__text {
+  margin: 0;
+  font-family: 'Proxima Nova Lt';
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 0.7px;
+}
+.social-icons {
+  font-size: 0;
+}
+.social-icons .fa {
+  margin-right: 8px;
+  font-size: 31px;
+  color: #CCC;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.social-icons .fa:last-child {
+  margin-right: 0;
+}
+.social-icons .fa:hover,
+.social-icons .fa:active,
+.social-icons .fa:focus {
+  color: #F76F8D;
+}
+.header {
+  background-color: #F76F8D;
+  background-image: url("../img/bg/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 790px;
+  box-shadow: 8px 13px 15px rgba(189, 10, 170, 0.15);
+  position: relative;
+  z-index: 0;
+}
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(240, 74, 111, 0.5);
+  z-index: -1;
+}
+.header-heading {
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header-heading__title {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3.4px;
+  text-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
+}
+.destination {
+  position: relative;
+  background-color: #fdf8f9;
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+.hotel-desc {
+  position: relative;
+  background-color: #FFF;
+  padding-top: 125px;
+  padding-bottom: 57px;
+}
+.hotel-desc-heading {
+  font-family: 'Proxima Nova Lt';
+  width: 670px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.hotel-desc-heading__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #333333;
+  letter-spacing: 1.5px;
+}
+.hotel-desc-heading__subtitle {
+  margin: 0;
+  font-size: 18px;
+  color: #cccccc;
+  letter-spacing: 0.9px;
+}
+.info {
+  background-color: #FDF8F9;
+  padding-top: 136px;
+  padding-bottom: 75px;
+}
+.footer {
+  background-color: #FFF;
+}
+.footer-content {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+}
+/*# sourceMappingURL=main.css.map */

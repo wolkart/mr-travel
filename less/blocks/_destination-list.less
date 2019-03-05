@@ -1,0 +1,64 @@
+.destination-list {
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.destination-item {
+	display: block;
+	position: relative;
+	margin-bottom: 25px;
+	overflow: hidden;
+	box-shadow: 8px 13px 15px rgba(189, 10, 170, 0.15);
+	
+	&:hover .destination-item-hover {
+		display: block;
+		top: 0;
+	}
+}
+
+.destination-item__img {
+	display: block;
+	width: 330px;
+	
+	&--big {
+		width: 687px;
+	}
+}
+
+.destination-item-hover {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(240, 74, 111, 0.7);
+	padding-top: 110px;
+	text-align: center;
+	color: #FFF;
+	
+	-webkit-transition: top 0.5s ease-out;
+	   -moz-transition: top 0.5s ease-out;
+	    -ms-transition: top 0.5s ease-out;
+	     -o-transition: top 0.5s ease-out;
+	        transition: top 0.5s ease-out;
+}
+
+.destination-item-hover__icon {
+	margin-bottom: 10px;
+}
+
+.destination-item-hover__title {
+	margin: 0;
+	font-size: 24px;
+	letter-spacing: 1.2px;
+	font-weight: bold;
+	
+	span {
+		font-family: 'Proxima Nova Lt';
+		font-weight: 300;
+	}
+}
