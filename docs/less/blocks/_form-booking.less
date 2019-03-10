@@ -1,4 +1,5 @@
 .form-booking-heading {
+	margin: 0;
 	margin-bottom: 45px;
 	font-family: 'Proxima Nova Lt';
 	color: #626161;
@@ -11,13 +12,34 @@
 
 .form-booking {
 	display: flex;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-    margin-bottom: 75px;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	margin-bottom: 45px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media (min-width: 992px) {
+		display: flex;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: stretch;
+		align-items: stretch;
+		margin-bottom: 75px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 
 .form-booking__input {
-	width: 144px;
+	max-width: 350px;
+	width: 100%;
+	margin-bottom: 15px;
 	padding: 15px 10px 15px 20px;
 	
 	background-repeat: no-repeat;
@@ -54,14 +76,21 @@
 	&--icon-guests {
 		background-image: url("../img/icons/guests-icon.png");
 	}
-	
-	&--large-width {
-		width: 267px;
+
+	@media (min-width: 992px) {
+		width: 144px;
+		margin-bottom: 0;
+		
+		&--large-width {
+			width: 267px;
+		}
 	}
 }
 
 .form-booking__submit {
-	padding: 15px 25px;
+	max-width: 350px;
+	width: 100%;
+	padding: 18px 25px;
 	
 	outline: none;
 	border: none;
@@ -84,5 +113,9 @@
 	&:hover, &:active, &:focus {
 		background-color: #F73C65;
   		box-shadow: 0px 0px 20px 5px rgba(247, 111, 141, 0.3);
+	}
+
+	@media (min-width: 992px) {
+		width: auto;
 	}
 }

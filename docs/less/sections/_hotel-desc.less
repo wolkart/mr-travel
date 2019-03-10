@@ -1,29 +1,46 @@
 .hotel-desc {
-	position: relative;
 	background-color: #FFF;
-	padding-top: 125px;
-	padding-bottom: 57px;
+	padding-top: 80px;
+	
+	@media (min-width: 992px) {
+		padding-top: 125px;
+	}
 }
 
 .hotel-desc-heading {
 	font-family: 'Proxima Nova Lt';
-	width: 670px;
+	max-width: 670px;
 	margin: 0 auto;
 	margin-bottom: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
 	text-align: center;
+	
+	@media (min-width: 768px) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 
 .hotel-desc-heading__title {
 	margin: 0;
 	margin-bottom: 15px;
-	font-size: 30px;
+	font-size: 24px;
 	color: #333333;
 	letter-spacing: 1.5px;
+	
+	@media (min-width: 768px) {
+		font-size: 30px;
+	}
 }
 
 .hotel-desc-heading__subtitle {
 	margin: 0;
-	font-size: 18px;
+	font-size: 14px;
 	color: #cccccc;
 	letter-spacing: 0.9px;
+	
+	@media (min-width: 768px) {
+		font-size: 18px;
+	}
 }

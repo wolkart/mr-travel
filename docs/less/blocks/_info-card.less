@@ -1,4 +1,4 @@
-.info-card-wrapper {
+.info-wrapper {
 	display: flex;
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
@@ -7,17 +7,31 @@
 }
 
 .info-card {
-	width: 329px;
+	max-width: 330px;
+	width: 100%;
+	min-height: 330px;
+	margin-bottom: 25px;
 	background-color: #FFF;
 	padding: 20px 30px 25px;
 	-webkit-border-radius: 20px;
 	        border-radius: 20px;
 	box-shadow: 0 0 30px rgba(247, 111, 141, 0.1);
+	
+	@media (min-width: 992px) {
+		margin-right: 20px;
+		margin-bottom: 0;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }
 
 .info-card__title {
+	margin: 0;
 	margin-bottom: 32px;
 	font-size: 24px;
+	font-weight: normal;
 	color: #F76F8D;
 	letter-spacing: 1.2px;
 }

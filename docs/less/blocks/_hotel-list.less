@@ -1,0 +1,73 @@
+.hotel-list {
+	display: grid;
+	
+	@media (min-width: 768px) {
+	    grid-template-columns: 1fr 1fr;
+	}
+}
+
+.hotel-card {
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	margin-bottom: 40px;
+	
+	@media (min-width: 992px) {
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-align-items: stretch;
+		align-items: stretch;
+		margin-bottom: 26px;
+	}
+}
+
+.hotel-card__img {
+	background-color: #fdf8f9;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	height: 200px;
+	width: 200px;
+	box-shadow: 8px 13px 15px rgba(247, 111, 141, 0.1);
+	
+	@media (min-width: 992px) {
+		margin-right: 22px;
+	}
+}
+
+.hotel-card-desc {
+	width: 200px;
+	padding-top: 17px;
+}
+
+.hotel-card__name {
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #666666;
+	letter-spacing: 0.8px;
+}
+
+.hotel-card__rooms {
+	margin-bottom: 15px;
+	font-size: 14px;
+	color: #999;
+	letter-spacing: 0.8px;
+	
+	@media (min-width: 992px) {
+		margin-bottom: 35px;
+	}
+}
+
+.hotel-card__price {
+	font-size: 16px;
+	color: #f76f8d;
+	letter-spacing: 0.8px;
+	line-height: 30px;
+	font-style: italic;
+}
