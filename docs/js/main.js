@@ -25,7 +25,7 @@ $(document).ready(function() {
 	    $(window).resize(function(){
 	    	var w = $(window).width();
 	    	if(w > 992) {
-	    	    // nav.removeAttr('style');
+	    	    nav.removeAttr('style');
 	    	    navToggleButton.removeClass("active");
 	    	} else {
 
